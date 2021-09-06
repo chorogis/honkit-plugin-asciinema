@@ -6,7 +6,7 @@ module.exports = {
       process: function (block) {
         const cfg = this.config.get('pluginsConfig.asciinema')
         const { baseURL } = cfg
-        const castId = block.body
+        const castId = block.body.trim()
 
         if (this.generator !== 'website') {
           return `<img src="${baseURL}/a/${castId}.svg" alt="asciinema" /><a href="${baseURL}/a/${castId}">asciinema link</a>`

@@ -12,3 +12,11 @@
     }
 }
 ```
+
+Then you can use `asciinema` tag in your .md
+
+```
+{% asciinema %}
+Bzp8HVCJu4K0uGSpO2EwAuYOY
+{% endasciinema %}
+```
